@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ParagramSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"></rect>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"></autoresizingMask>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrB-Cr-G2J">
+                    <rect key="frame" x="72" y="347" width="233" height="300"></rect>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="moW-00-FV2">
+                            <rect key="frame" x="0.0" y="0.0" width="233" height="300"></rect>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="elm-f5-JUt">
+                            <rect key="frame" x="1" y="1" width="225" height="298"></rect>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iqt-JV-lP8">
+                                <size key="itemSize" width="50" height="50"></size>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"></size>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"></size>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"></inset>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="elm-f5-JUt" secondAttribute="trailing" constant="7" id="4OT-l1-KRg"></constraint>
+                        <constraint firstItem="elm-f5-JUt" firstAttribute="top" secondItem="VrB-Cr-G2J" secondAttribute="top" constant="1" id="5SW-gB-qjh"></constraint>
+                        <constraint firstAttribute="height" priority="750" constant="300" id="6EX-gT-rvL"></constraint>
+                        <constraint firstAttribute="bottom" secondItem="moW-00-FV2" secondAttribute="bottom" id="9Re-i2-CRy"></constraint>
+                        <constraint firstAttribute="width" constant="233" id="HY3-f7-Gcu"></constraint>
+                        <constraint firstItem="elm-f5-JUt" firstAttribute="leading" secondItem="VrB-Cr-G2J" secondAttribute="leading" constant="1" id="HjY-dW-lhp"></constraint>
+                        <constraint firstAttribute="bottom" secondItem="elm-f5-JUt" secondAttribute="bottom" constant="1" id="hOC-nU-kwX"></constraint>
+                        <constraint firstItem="moW-00-FV2" firstAttribute="leading" secondItem="VrB-Cr-G2J" secondAttribute="leading" id="oSG-bx-Jb1"></constraint>
+                        <constraint firstAttribute="trailing" secondItem="moW-00-FV2" secondAttribute="trailing" id="qsu-pa-wty"></constraint>
+                        <constraint firstItem="moW-00-FV2" firstAttribute="top" secondItem="VrB-Cr-G2J" secondAttribute="top" id="zsK-9c-OtU"></constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+            <constraints>
+                <constraint firstItem="VrB-Cr-G2J" firstAttribute="height" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="height" constant="-42" id="0dL-5t-bOA"></constraint>
+                <constraint firstAttribute="trailing" secondItem="VrB-Cr-G2J" secondAttribute="trailing" constant="70" id="rY1-fL-lFH"></constraint>
+                <constraint firstAttribute="bottom" secondItem="VrB-Cr-G2J" secondAttribute="bottom" constant="20" id="u7i-wG-awM"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImageView" destination="moW-00-FV2" id="Lfg-B3-l5L"></outlet>
+                <outlet property="collectionView" destination="elm-f5-JUt" id="9KN-88-hoe"></outlet>
+                <outlet property="view" destination="VrB-Cr-G2J" id="Dmo-ei-idW"></outlet>
+                <outlet property="viewBottomConstraint" destination="u7i-wG-awM" id="uMb-Ql-ERl"></outlet>
+                <outlet property="viewHeightConstraint" destination="6EX-gT-rvL" id="zLG-D3-krd"></outlet>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="104.5"></point>
+        </view>
+    </objects>
+</document>

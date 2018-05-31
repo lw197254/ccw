@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankinglistControllerViewController">
+            <connections>
+                <outlet property="contentView" destination="exu-Ue-rjo" id="SmN-pN-gj2"></outlet>
+                <outlet property="scrollView" destination="G2O-JU-OfV" id="Cf0-1c-jhh"></outlet>
+                <outlet property="selectionList" destination="cz8-sT-ibm" id="a7H-GW-zpk"></outlet>
+                <outlet property="view" destination="iN0-l3-epB" id="oV6-h2-23u"></outlet>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"></rect>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"></autoresizingMask>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz8-sT-ibm" customClass="HTHorizontalSelectionList">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"></rect>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="nkW-Vi-tBO"></constraint>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-JU-OfV">
+                    <rect key="frame" x="0.0" y="35" width="375" height="632"></rect>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exu-Ue-rjo">
+                            <rect key="frame" x="0.0" y="0.0" width="367" height="632"></rect>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                            <constraints>
+                                <constraint firstAttribute="width" priority="200" constant="367" id="Eo1-ES-9cb"></constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="exu-Ue-rjo" secondAttribute="bottom" id="LT7-lI-Spx"></constraint>
+                        <constraint firstAttribute="trailing" secondItem="exu-Ue-rjo" secondAttribute="trailing" id="Mz7-ZH-eZU"></constraint>
+                        <constraint firstItem="exu-Ue-rjo" firstAttribute="top" secondItem="G2O-JU-OfV" secondAttribute="top" id="mSl-gP-drq"></constraint>
+                        <constraint firstItem="exu-Ue-rjo" firstAttribute="leading" secondItem="G2O-JU-OfV" secondAttribute="leading" id="rlz-uj-prW"></constraint>
+                        <constraint firstItem="exu-Ue-rjo" firstAttribute="centerY" secondItem="G2O-JU-OfV" secondAttribute="centerY" id="uLg-Ph-8cM"></constraint>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JML-Ox-E8B"></outlet>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"></color>
+            <constraints>
+                <constraint firstItem="G2O-JU-OfV" firstAttribute="top" secondItem="cz8-sT-ibm" secondAttribute="bottom" id="4Wp-s1-4so"></constraint>
+                <constraint firstItem="G2O-JU-OfV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IRp-AZ-9Se"></constraint>
+                <constraint firstAttribute="trailing" secondItem="G2O-JU-OfV" secondAttribute="trailing" id="LqC-Y1-biL"></constraint>
+                <constraint firstItem="cz8-sT-ibm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xy5-hR-GHD"></constraint>
+                <constraint firstAttribute="trailing" secondItem="cz8-sT-ibm" secondAttribute="trailing" id="mSZ-rx-h5v"></constraint>
+                <constraint firstAttribute="bottom" secondItem="G2O-JU-OfV" secondAttribute="bottom" id="oTg-fB-F3c"></constraint>
+                <constraint firstItem="cz8-sT-ibm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tex-7p-fKk"></constraint>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="78.5"></point>
+        </view>
+    </objects>
+</document>

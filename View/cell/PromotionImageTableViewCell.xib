@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="185" id="KGk-i7-Jjw" customClass="PromotionImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="185"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="184"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="foG-7j-1wp">
+                        <rect key="frame" x="15" y="10" width="189" height="145"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="foG-7j-1wp" secondAttribute="height" multiplier="318:243" id="T4K-1a-w4f"></constraint>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7T-Ez-gDL">
+                        <rect key="frame" x="214" y="10" width="189" height="145"></rect>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="foG-7j-1wp" secondAttribute="bottom" priority="250" constant="15" id="Erg-of-0FM"></constraint>
+                    <constraint firstItem="foG-7j-1wp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LIt-d9-efG"></constraint>
+                    <constraint firstItem="foG-7j-1wp" firstAttribute="width" secondItem="q7T-Ez-gDL" secondAttribute="width" id="PSw-W6-oCF"></constraint>
+                    <constraint firstItem="foG-7j-1wp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TWK-7u-5tr"></constraint>
+                    <constraint firstItem="q7T-Ez-gDL" firstAttribute="leading" secondItem="foG-7j-1wp" secondAttribute="trailing" constant="10" id="aqd-NN-eoY"></constraint>
+                    <constraint firstItem="q7T-Ez-gDL" firstAttribute="top" secondItem="foG-7j-1wp" secondAttribute="top" id="baE-md-lvM"></constraint>
+                    <constraint firstItem="q7T-Ez-gDL" firstAttribute="bottom" secondItem="foG-7j-1wp" secondAttribute="bottom" id="fNc-tH-r56"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="q7T-Ez-gDL" secondAttribute="trailing" constant="15" id="nOA-d6-abc"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image1" destination="foG-7j-1wp" id="fuN-4Z-qm4"></outlet>
+                <outlet property="image2" destination="q7T-Ez-gDL" id="hx4-mM-eiC"></outlet>
+            </connections>
+            <point key="canvasLocation" x="39" y="63.5"></point>
+        </tableViewCell>
+    </objects>
+</document>

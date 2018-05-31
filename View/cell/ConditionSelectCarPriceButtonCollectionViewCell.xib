@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConditionSelectCarPriceButtonCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"></rect>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDe-2F-xYv">
+                        <rect key="frame" x="0.0" y="0.0" width="49" height="50"></rect>
+                        <color key="backgroundColor" red="0.9725" green="0.9725" blue="0.9725" alpha="1" colorSpace="deviceRGB"></color>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"></fontDescription>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.4000" green="0.4000" blue="0.4000" alpha="1" colorSpace="deviceRGB"></color>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dDe-2F-xYv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ee7-bp-9VV"></constraint>
+                <constraint firstAttribute="trailing" secondItem="dDe-2F-xYv" secondAttribute="trailing" constant="1" id="RYX-rx-MMj"></constraint>
+                <constraint firstItem="dDe-2F-xYv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Z0s-2w-gvo"></constraint>
+                <constraint firstAttribute="bottom" secondItem="dDe-2F-xYv" secondAttribute="bottom" id="fld-PB-OIS"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="dDe-2F-xYv" id="aDK-D5-e8O"></outlet>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

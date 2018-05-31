@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoreStoreAndMapCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="334"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="334"></rect>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6e-hF-cnr">
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="44"></rect>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0dj-yL-9Pn"></constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                        <inset key="titleEdgeInsets" minX="-17" minY="0.0" maxX="17" maxY="0.0"></inset>
+                        <inset key="imageEdgeInsets" minX="56" minY="0.0" maxX="-56" maxY="0.0"></inset>
+                        <state key="normal" title="共n家经销商" image="箭头向下.png">
+                            <color key="titleColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        </state>
+                        <state key="selected" image="箭头向上.png"></state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4Y-JZ-1IQ" customClass="BMKMapView">
+                        <rect key="frame" x="0.0" y="54" width="321" height="180"></rect>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="VEI-jh-HOb"></constraint>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.9450" green="0.9450" blue="0.9450" alpha="1" colorSpace="deviceRGB"></color>
+            <constraints>
+                <constraint firstItem="c6e-hF-cnr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0ki-rN-5E6"></constraint>
+                <constraint firstAttribute="trailing" secondItem="S4Y-JZ-1IQ" secondAttribute="trailing" id="5vh-VH-x5a"></constraint>
+                <constraint firstItem="c6e-hF-cnr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EdS-zf-C5f"></constraint>
+                <constraint firstItem="S4Y-JZ-1IQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S0q-hb-nTg"></constraint>
+                <constraint firstAttribute="trailing" secondItem="c6e-hF-cnr" secondAttribute="trailing" id="okT-UV-WZx"></constraint>
+                <constraint firstItem="S4Y-JZ-1IQ" firstAttribute="top" secondItem="c6e-hF-cnr" secondAttribute="bottom" constant="10" id="y8F-QS-m4D"></constraint>
+            </constraints>
+            <size key="customSize" width="321" height="334"></size>
+            <connections>
+                <outlet property="mapView" destination="S4Y-JZ-1IQ" id="JXR-Hh-Z1h"></outlet>
+                <outlet property="mapViewHeightConstraints" destination="VEI-jh-HOb" id="f4Z-bH-Pbo"></outlet>
+                <outlet property="storeNumberButton" destination="c6e-hF-cnr" id="zHb-TD-YC6"></outlet>
+                <outlet property="storeNumberButtonHeightConstraints" destination="0dj-yL-9Pn" id="Kpj-Js-m8S"></outlet>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="259"></point>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="箭头向上.png" width="12" height="12"></image>
+        <image name="箭头向下.png" width="12" height="12"></image>
+    </resources>
+</document>

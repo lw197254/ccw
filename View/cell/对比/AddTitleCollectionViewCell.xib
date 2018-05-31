@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddTitleCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="293"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="293"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWn-j3-N4x">
+                        <rect key="frame" x="4" y="15" width="211" height="273"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add.png" translatesAutoresizingMaskIntoConstraints="NO" id="G4y-yI-QcF">
+                                <rect key="frame" x="83.5" y="114.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Ea8-eR-c6R"/>
+                                    <constraint firstAttribute="height" constant="44" id="RBx-pG-XRw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G4y-yI-QcF" firstAttribute="centerX" secondItem="IWn-j3-N4x" secondAttribute="centerX" id="d4o-LB-zRZ"/>
+                            <constraint firstItem="G4y-yI-QcF" firstAttribute="centerY" secondItem="IWn-j3-N4x" secondAttribute="centerY" id="glB-NX-4GX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IWn-j3-N4x" secondAttribute="bottom" constant="5" id="EOY-NM-hTO"/>
+                <constraint firstItem="IWn-j3-N4x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Hum-zo-6G8"/>
+                <constraint firstItem="IWn-j3-N4x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="bf9-M1-naW"/>
+                <constraint firstAttribute="trailing" secondItem="IWn-j3-N4x" secondAttribute="trailing" constant="10" id="h13-6e-5VH"/>
+            </constraints>
+            <size key="customSize" width="225" height="293"/>
+            <connections>
+                <outlet property="shadowView" destination="IWn-j3-N4x" id="7jk-y2-OYe"/>
+            </connections>
+            <point key="canvasLocation" x="119.5" y="257.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_add.png" width="44" height="44"/>
+    </resources>
+</document>

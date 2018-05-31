@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-30-AmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="152"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认图片105_80.png" translatesAutoresizingMaskIntoConstraints="NO" id="uyI-fx-hvr">
+                                <rect key="frame" x="0.0" y="10" width="262" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="zao-J8-bax"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-Ax-iaC">
+                                <rect key="frame" x="0.0" y="96" width="29" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="口碑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-rM-ULp">
+                                <rect key="frame" x="0.0" y="116" width="25" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-j5-DuT">
+                                <rect key="frame" x="0.0" y="135" width="25" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.14499999999999999" blue="0.14499999999999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uyI-fx-hvr" secondAttribute="trailing" id="4ff-so-lVV"/>
+                            <constraint firstItem="QnN-j5-DuT" firstAttribute="leading" secondItem="uyI-fx-hvr" secondAttribute="leading" id="FPQ-Sh-fyg"/>
+                            <constraint firstItem="uyI-fx-hvr" firstAttribute="leading" secondItem="cn9-30-AmJ" secondAttribute="leading" id="OCn-l0-Sd2"/>
+                            <constraint firstItem="uyI-fx-hvr" firstAttribute="top" secondItem="cn9-30-AmJ" secondAttribute="top" constant="10" id="RPF-ll-BN5"/>
+                            <constraint firstItem="ze5-rM-ULp" firstAttribute="leading" secondItem="uyI-fx-hvr" secondAttribute="leading" id="XGM-9i-c8t"/>
+                            <constraint firstItem="ze5-rM-ULp" firstAttribute="top" secondItem="bB1-Ax-iaC" secondAttribute="bottom" constant="3" id="Zmp-qO-4E0"/>
+                            <constraint firstItem="QnN-j5-DuT" firstAttribute="top" secondItem="ze5-rM-ULp" secondAttribute="bottom" constant="4" id="jjA-il-39n"/>
+                            <constraint firstItem="bB1-Ax-iaC" firstAttribute="leading" secondItem="uyI-fx-hvr" secondAttribute="leading" id="nvp-0f-dab"/>
+                            <constraint firstItem="bB1-Ax-iaC" firstAttribute="top" secondItem="uyI-fx-hvr" secondAttribute="bottom" constant="6" id="sSS-8o-DY3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cn9-30-AmJ" secondAttribute="trailing" id="1vC-a6-lVX"/>
+                <constraint firstAttribute="bottom" secondItem="cn9-30-AmJ" secondAttribute="bottom" id="7Et-TZ-hrE"/>
+                <constraint firstItem="cn9-30-AmJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EFQ-qX-eHG"/>
+                <constraint firstItem="cn9-30-AmJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NHN-36-39x"/>
+            </constraints>
+            <size key="customSize" width="262" height="167"/>
+            <connections>
+                <outlet property="carName" destination="bB1-Ax-iaC" id="6hH-Md-jgJ"/>
+                <outlet property="image" destination="uyI-fx-hvr" id="e6g-dR-V2v"/>
+                <outlet property="price" destination="QnN-j5-DuT" id="2nv-1T-wbF"/>
+                <outlet property="source" destination="ze5-rM-ULp" id="jsI-R5-oeQ"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="84.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="默认图片105_80.png" width="105" height="80"/>
+    </resources>
+</document>

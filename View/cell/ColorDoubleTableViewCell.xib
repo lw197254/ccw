@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="ColorDoubleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="81"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="80.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdL-GP-HdW">
+                        <rect key="frame" x="15" y="32" width="15" height="7.5"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Got-XS-u3c"></constraint>
+                            <constraint firstAttribute="height" constant="7.5" id="kQI-G5-lGR"></constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frL-mH-5im">
+                        <rect key="frame" x="53" y="32" width="36" height="17"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XH1-OA-Knu">
+                        <rect key="frame" x="15" y="39" width="15" height="7.5"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="M3U-Qm-Wzw"></constraint>
+                            <constraint firstAttribute="height" constant="7.5" id="ZWd-AC-ImF"></constraint>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="对号.png" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-RT-q4t">
+                        <rect key="frame" x="296" y="33" width="15" height="15"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="68L-dc-bcL"></constraint>
+                            <constraint firstAttribute="width" constant="15" id="QhK-7E-gSW"></constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ywL-RT-q4t" secondAttribute="trailing" constant="15" id="7Ug-lt-LSe"></constraint>
+                    <constraint firstItem="ywL-RT-q4t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DGx-G2-dap"></constraint>
+                    <constraint firstItem="frL-mH-5im" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GUz-vV-ItT"></constraint>
+                    <constraint firstItem="frL-mH-5im" firstAttribute="leading" secondItem="AdL-GP-HdW" secondAttribute="trailing" constant="23" id="Rbz-x4-jCn"></constraint>
+                    <constraint firstItem="XH1-OA-Knu" firstAttribute="top" secondItem="AdL-GP-HdW" secondAttribute="bottom" id="Yow-nf-2uW"></constraint>
+                    <constraint firstItem="AdL-GP-HdW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Zfo-qw-L53"></constraint>
+                    <constraint firstItem="AdL-GP-HdW" firstAttribute="top" secondItem="frL-mH-5im" secondAttribute="top" id="jRe-qX-PXk"></constraint>
+                    <constraint firstItem="XH1-OA-Knu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xAK-VT-3ZX"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseImage" destination="ywL-RT-q4t" id="bgD-lV-mwe"></outlet>
+                <outlet property="image" destination="AdL-GP-HdW" id="2VZ-3K-Znp"></outlet>
+                <outlet property="imageDouble" destination="XH1-OA-Knu" id="d7n-9K-nDA"></outlet>
+                <outlet property="name" destination="frL-mH-5im" id="Xic-M9-c95"></outlet>
+            </connections>
+            <point key="canvasLocation" x="36" y="133.5"></point>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="对号.png" width="12" height="12"></image>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="KouBeiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeG-Bq-aZn">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="90"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpD-8T-3HX">
+                                <rect key="frame" x="15" y="34" width="17" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="TY3-Ph-h7e"/>
+                                    <constraint firstAttribute="height" constant="22" id="Y32-8p-hA7"/>
+                                </constraints>
+                                <state key="normal" image="未选中.png"/>
+                                <state key="selected" title="aa" image="选中.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgb-df-mgZ">
+                                <rect key="frame" x="47" y="15" width="269" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgJ-Sc-HpN">
+                                <rect key="frame" x="47" y="47" width="269" height="28"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sea.png" translatesAutoresizingMaskIntoConstraints="NO" id="MPh-cq-f1f">
+                                        <rect key="frame" x="0.0" y="16" width="12" height="12"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP4-fo-pJu">
+                                        <rect key="frame" x="272" y="14" width="29" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.73329999999999995" green="0.73329999999999995" blue="0.73329999999999995" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jU-yh-6VX">
+                                        <rect key="frame" x="21" y="14" width="29" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.73329999999999995" green="0.73329999999999995" blue="0.73329999999999995" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BP4-fo-pJu" firstAttribute="bottom" secondItem="1jU-yh-6VX" secondAttribute="bottom" id="38n-0V-rNp"/>
+                                    <constraint firstItem="1jU-yh-6VX" firstAttribute="bottom" secondItem="MPh-cq-f1f" secondAttribute="bottom" id="A5U-Nu-vGc"/>
+                                    <constraint firstItem="1jU-yh-6VX" firstAttribute="leading" secondItem="MPh-cq-f1f" secondAttribute="trailing" constant="9" id="PHI-3p-0AX"/>
+                                    <constraint firstAttribute="trailing" secondItem="BP4-fo-pJu" secondAttribute="trailing" constant="-32" id="SYq-Ka-7ig"/>
+                                    <constraint firstAttribute="bottom" secondItem="MPh-cq-f1f" secondAttribute="bottom" id="u79-51-zu6"/>
+                                    <constraint firstItem="MPh-cq-f1f" firstAttribute="leading" secondItem="kgJ-Sc-HpN" secondAttribute="leading" id="yx3-Ub-IKh"/>
+                                    <constraint firstAttribute="height" constant="28" id="z82-FR-AXm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kgJ-Sc-HpN" secondAttribute="trailing" constant="15" id="2X5-JJ-Uob"/>
+                            <constraint firstItem="MpD-8T-3HX" firstAttribute="leading" secondItem="LeG-Bq-aZn" secondAttribute="leading" constant="15" id="JSB-2s-E4x"/>
+                            <constraint firstAttribute="height" constant="90" id="OQ7-dj-gw9"/>
+                            <constraint firstItem="MpD-8T-3HX" firstAttribute="centerY" secondItem="LeG-Bq-aZn" secondAttribute="centerY" id="VYK-dY-zcR"/>
+                            <constraint firstAttribute="bottom" secondItem="kgJ-Sc-HpN" secondAttribute="bottom" constant="15" id="bZp-BM-ZMq"/>
+                            <constraint firstItem="xgb-df-mgZ" firstAttribute="leading" secondItem="MpD-8T-3HX" secondAttribute="trailing" constant="15" id="fsC-CG-Jm3"/>
+                            <constraint firstItem="xgb-df-mgZ" firstAttribute="top" secondItem="LeG-Bq-aZn" secondAttribute="top" constant="15" id="fxE-4Z-7bx"/>
+                            <constraint firstAttribute="trailing" secondItem="xgb-df-mgZ" secondAttribute="trailing" constant="15" id="u45-eH-MHn"/>
+                            <constraint firstItem="kgJ-Sc-HpN" firstAttribute="leading" secondItem="xgb-df-mgZ" secondAttribute="leading" id="vec-Bm-CFe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LeG-Bq-aZn" secondAttribute="trailing" id="OUe-HZ-iGf"/>
+                    <constraint firstAttribute="bottom" secondItem="LeG-Bq-aZn" secondAttribute="bottom" priority="250" id="OYZ-EI-lhl"/>
+                    <constraint firstItem="LeG-Bq-aZn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="800" id="Z7Q-dm-u8c"/>
+                    <constraint firstItem="LeG-Bq-aZn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hfG-se-bEp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="LeG-Bq-aZn" id="qQN-oo-CR1"/>
+                <outlet property="imageViewLeadToSuperView" destination="Z7Q-dm-u8c" id="m7H-dI-LHd"/>
+                <outlet property="selectButton" destination="MpD-8T-3HX" id="c6C-gj-0Qc"/>
+                <outlet property="time" destination="BP4-fo-pJu" id="vM8-eS-Zvw"/>
+                <outlet property="title" destination="xgb-df-mgZ" id="2SH-Jd-BLl"/>
+                <outlet property="views" destination="1jU-yh-6VX" id="SaH-zg-fIN"/>
+            </connections>
+            <point key="canvasLocation" x="91.5" y="146"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_sea.png" width="12" height="12"/>
+        <image name="未选中.png" width="17" height="17"/>
+        <image name="选中.png" width="17" height="17"/>
+    </resources>
+</document>

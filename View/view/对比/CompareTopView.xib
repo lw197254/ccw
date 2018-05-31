@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CompareTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-ak-V8g">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-r1-lTS" customClass="ModuleCollectionView">
+                            <rect key="frame" x="0.0" y="120" width="375" height="80"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="DSN-g3-cND"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mfX-Xl-1Hb">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="XsN-r1-lTS" secondAttribute="bottom" constant="20" id="1h4-OA-6tf"/>
+                        <constraint firstAttribute="trailing" secondItem="XsN-r1-lTS" secondAttribute="trailing" id="1tA-h7-I5G"/>
+                        <constraint firstItem="XsN-r1-lTS" firstAttribute="leading" secondItem="Cyc-ak-V8g" secondAttribute="leading" id="Rlh-kC-hX0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cyc-ak-V8g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Ph-RG-43N"/>
+                <constraint firstAttribute="bottom" secondItem="Cyc-ak-V8g" secondAttribute="bottom" id="FyT-2V-qEJ"/>
+                <constraint firstItem="Cyc-ak-V8g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pCD-kS-COv"/>
+                <constraint firstAttribute="trailing" secondItem="Cyc-ak-V8g" secondAttribute="trailing" id="ty8-hh-Tro"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="XsN-r1-lTS" id="lbB-Hl-yp3"/>
+                <outlet property="flowLayout" destination="mfX-Xl-1Hb" id="CyU-9a-mJ6"/>
+                <outlet property="topBackgroundView" destination="Cyc-ak-V8g" id="gME-AX-plE"/>
+            </connections>
+            <point key="canvasLocation" x="-87" y="64"/>
+        </view>
+    </objects>
+</document>

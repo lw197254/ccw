@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoHearView">
+            <connections>
+                <outlet property="des" destination="TeG-xh-rPg" id="R5X-uO-Vj8"/>
+                <outlet property="title" destination="vCK-C3-6Hu" id="Uaf-7h-jXF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="687-HK-gIG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="254" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-C3-6Hu">
+                    <rect key="frame" x="15" y="10" width="309" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeG-xh-rPg">
+                    <rect key="frame" x="15" y="41" width="309" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vCK-C3-6Hu" secondAttribute="trailing" constant="15" id="9Wt-yO-iqo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TeG-xh-rPg" secondAttribute="trailing" constant="15" id="DF8-wd-Aaa"/>
+                <constraint firstItem="vCK-C3-6Hu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="GHj-ge-gQ9"/>
+                <constraint firstItem="TeG-xh-rPg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="IEh-8k-RtY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TeG-xh-rPg" secondAttribute="bottom" constant="10" id="Ug3-WT-xTa"/>
+                <constraint firstItem="TeG-xh-rPg" firstAttribute="top" secondItem="vCK-C3-6Hu" secondAttribute="bottom" constant="10" id="mp7-Pb-IB6"/>
+                <constraint firstItem="vCK-C3-6Hu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="xFV-5L-fxE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="93.5" y="-94"/>
+        </view>
+    </objects>
+</document>

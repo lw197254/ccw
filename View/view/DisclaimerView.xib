@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisclaimerView">
+            <connections>
+                <outlet property="view" destination="lJr-IQ-qQZ" id="vpV-F1-IWc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lJr-IQ-qQZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击提交表示阅读和同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMJ-yx-vDu">
+                            <rect key="frame" x="15" y="10" width="124" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.66659999999999997" green="0.66659999999999997" blue="0.66659999999999997" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《个人信息保护声明》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1La-wf-0W3">
+                            <rect key="frame" x="141" y="10" width="113" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.33329999999999999" green="0.33329999999999999" blue="0.33329999999999999" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="uMJ-yx-vDu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="4Oq-TB-K3t"/>
+                        <constraint firstItem="1La-wf-0W3" firstAttribute="leading" secondItem="uMJ-yx-vDu" secondAttribute="trailing" constant="2" id="QA4-nL-SKo"/>
+                        <constraint firstItem="uMJ-yx-vDu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="agT-EJ-mEy"/>
+                        <constraint firstItem="1La-wf-0W3" firstAttribute="centerY" secondItem="uMJ-yx-vDu" secondAttribute="centerY" id="g7H-Pk-E7g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="GEp-ed-RJZ"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="lJr-IQ-qQZ" secondAttribute="leading" id="hBp-VD-Flh"/>
+                <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="pFr-pm-tD4"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="lJr-IQ-qQZ" secondAttribute="top" id="xRN-ja-MjB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="76"/>
+        </view>
+    </objects>
+</document>

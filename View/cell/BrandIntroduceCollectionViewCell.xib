@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrandIntroduceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="287"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="198" height="287"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdE-eH-ZwX">
+                        <rect key="frame" x="0.0" y="0.0" width="198" height="287"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认图片105_80.png" translatesAutoresizingMaskIntoConstraints="NO" id="FN7-Ab-ge9">
+                                <rect key="frame" x="0.0" y="10" width="198" height="80"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车系" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQy-7h-0ny">
+                                <rect key="frame" x="0.0" y="96" width="198" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXs-t7-oKa">
+                                <rect key="frame" x="0.0" y="117" width="198" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AXs-t7-oKa" firstAttribute="top" secondItem="cQy-7h-0ny" secondAttribute="bottom" constant="3" id="2Jv-g6-umg"/>
+                            <constraint firstItem="FN7-Ab-ge9" firstAttribute="leading" secondItem="AdE-eH-ZwX" secondAttribute="leading" id="6ZP-Zu-lLx"/>
+                            <constraint firstItem="cQy-7h-0ny" firstAttribute="leading" secondItem="FN7-Ab-ge9" secondAttribute="leading" id="FFW-PY-zJi"/>
+                            <constraint firstAttribute="trailing" secondItem="FN7-Ab-ge9" secondAttribute="trailing" id="GZ1-2W-JvO"/>
+                            <constraint firstAttribute="trailing" secondItem="cQy-7h-0ny" secondAttribute="trailing" id="Kvx-eh-vmD"/>
+                            <constraint firstItem="FN7-Ab-ge9" firstAttribute="top" secondItem="AdE-eH-ZwX" secondAttribute="top" constant="10" id="STE-2l-9vO"/>
+                            <constraint firstAttribute="trailing" secondItem="AXs-t7-oKa" secondAttribute="trailing" id="biy-gC-LWO"/>
+                            <constraint firstAttribute="bottom" secondItem="AXs-t7-oKa" secondAttribute="bottom" priority="250" constant="10" id="fD8-By-LVh"/>
+                            <constraint firstItem="AXs-t7-oKa" firstAttribute="leading" secondItem="FN7-Ab-ge9" secondAttribute="leading" id="sni-V1-cWV"/>
+                            <constraint firstItem="cQy-7h-0ny" firstAttribute="top" secondItem="FN7-Ab-ge9" secondAttribute="bottom" constant="6" id="vPC-Bv-YnV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AdE-eH-ZwX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9ML-wE-mMN"/>
+                <constraint firstItem="AdE-eH-ZwX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ru1-QG-Me2"/>
+                <constraint firstAttribute="bottom" secondItem="AdE-eH-ZwX" secondAttribute="bottom" id="hfc-vd-cA8"/>
+                <constraint firstAttribute="trailing" secondItem="AdE-eH-ZwX" secondAttribute="trailing" id="rfQ-rn-oco"/>
+            </constraints>
+            <size key="customSize" width="198" height="287"/>
+            <connections>
+                <outlet property="carName" destination="cQy-7h-0ny" id="n94-j9-cZU"/>
+                <outlet property="image" destination="FN7-Ab-ge9" id="FSf-DK-uhx"/>
+                <outlet property="price" destination="AXs-t7-oKa" id="fFa-oW-DGJ"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="-13.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="默认图片105_80.png" width="105" height="80"/>
+    </resources>
+</document>

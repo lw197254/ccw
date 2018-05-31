@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PromotionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wCb-Vo-FAW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"></rect>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wCb-Vo-FAW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EOd-H4-f8h"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="wCb-Vo-FAW" secondAttribute="bottom" id="agj-86-zhS"></constraint>
+                    <constraint firstItem="wCb-Vo-FAW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bOD-tq-g7f"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="wCb-Vo-FAW" secondAttribute="trailing" id="k5L-dM-zUh"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tableview" destination="wCb-Vo-FAW" id="NiI-pl-cCz"></outlet>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

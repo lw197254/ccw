@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeTagCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-sj-ako">
+                        <rect key="frame" x="15" y="0.0" width="197" height="149"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LC2-x0-UbG">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-vR-fn5">
+                        <rect key="frame" x="212" y="0.0" width="50" height="149"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tianjiabeijing" translatesAutoresizingMaskIntoConstraints="NO" id="sYt-yz-NK1">
+                                <rect key="frame" x="-20" y="0.0" width="70" height="149"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-0A-p8z">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="149"/>
+                                <state key="normal" image="tianjia"/>
+                                <connections>
+                                    <action selector="clickJump2Tags:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OKK-TH-2XN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FNQ-0A-p8z" firstAttribute="leading" secondItem="bdm-vR-fn5" secondAttribute="leading" id="3Lo-zh-s6t"/>
+                            <constraint firstAttribute="bottom" secondItem="sYt-yz-NK1" secondAttribute="bottom" id="8AM-fV-iof"/>
+                            <constraint firstAttribute="bottom" secondItem="FNQ-0A-p8z" secondAttribute="bottom" id="SW9-OE-Sfd"/>
+                            <constraint firstItem="sYt-yz-NK1" firstAttribute="leading" secondItem="bdm-vR-fn5" secondAttribute="leading" constant="-20" id="VpX-if-kI7"/>
+                            <constraint firstAttribute="trailing" secondItem="sYt-yz-NK1" secondAttribute="trailing" id="fXs-Kg-rBc"/>
+                            <constraint firstAttribute="trailing" secondItem="FNQ-0A-p8z" secondAttribute="trailing" id="pRU-IW-iR1"/>
+                            <constraint firstItem="FNQ-0A-p8z" firstAttribute="top" secondItem="bdm-vR-fn5" secondAttribute="top" id="utT-jl-Jv3"/>
+                            <constraint firstItem="sYt-yz-NK1" firstAttribute="top" secondItem="bdm-vR-fn5" secondAttribute="top" id="yDR-eR-rxc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bdm-vR-fn5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="55c-aK-wS1"/>
+                <constraint firstItem="G8S-sj-ako" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="A3l-xd-UFM"/>
+                <constraint firstAttribute="bottom" secondItem="bdm-vR-fn5" secondAttribute="bottom" id="a1q-o7-hvg"/>
+                <constraint firstAttribute="trailing" secondItem="G8S-sj-ako" secondAttribute="trailing" constant="50" id="dDh-tN-p2e"/>
+                <constraint firstItem="G8S-sj-ako" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="hKi-pp-UHd"/>
+                <constraint firstItem="bdm-vR-fn5" firstAttribute="leading" secondItem="G8S-sj-ako" secondAttribute="trailing" id="oFV-po-13q"/>
+                <constraint firstAttribute="bottom" secondItem="G8S-sj-ako" secondAttribute="bottom" id="pPx-SP-bxA"/>
+                <constraint firstAttribute="trailing" secondItem="bdm-vR-fn5" secondAttribute="trailing" id="rnK-4T-YsT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="262" height="149"/>
+            <connections>
+                <outlet property="collectionView" destination="G8S-sj-ako" id="NnG-ok-LN9"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="122.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tianjia" width="15" height="15"/>
+        <image name="tianjiabeijing" width="87" height="60"/>
+    </resources>
+</document>

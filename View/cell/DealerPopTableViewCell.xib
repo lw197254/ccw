@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="DealerPopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="135"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="134.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDY-XH-Dc9">
+                        <rect key="frame" x="15" y="15" width="340" height="17"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="裸车价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEA-DF-JOL">
+                        <rect key="frame" x="15" y="52" width="34" height="14"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZE-x2-XFo">
+                        <rect key="frame" x="111.5" y="52.5" width="28.5" height="13.5"></rect>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqe-mq-rRZ">
+                        <rect key="frame" x="263" y="90" width="100" height="30"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="hsy-Bu-bMf"></constraint>
+                            <constraint firstAttribute="height" constant="30" id="xeK-iO-Igs"></constraint>
+                        </constraints>
+                        <state key="normal" title="询底价" backgroundImage="bnt_xundijia_n.png"></state>
+                        <connections>
+                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchDown" id="eVC-uB-FnE"></action>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-FW-aCj">
+                        <rect key="frame" x="15" y="83" width="23" height="14"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-53-nfF">
+                        <rect key="frame" x="54" y="49" width="38" height="18"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                        <color key="textColor" red="1.0000" green="0.1450" blue="0.1450" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukm-Z8-DgQ">
+                        <rect key="frame" x="43" y="80" width="36" height="17"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                        <color key="textColor" red="1.0000" green="0.5333" blue="0.2666" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hEo-53-nfF" firstAttribute="leading" secondItem="LEA-DF-JOL" secondAttribute="trailing" constant="5" id="3i9-AX-jrV"></constraint>
+                    <constraint firstItem="qbd-FW-aCj" firstAttribute="top" secondItem="LEA-DF-JOL" secondAttribute="bottom" constant="17" id="40d-yo-KQN"></constraint>
+                    <constraint firstItem="RDY-XH-Dc9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7j9-RF-NYw"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="uqe-mq-rRZ" secondAttribute="trailing" constant="15" id="8Cb-WD-SyX"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="uqe-mq-rRZ" secondAttribute="bottom" constant="15" id="DXI-s8-wgw"></constraint>
+                    <constraint firstItem="RDY-XH-Dc9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="JZb-dC-qZv"></constraint>
+                    <constraint firstItem="qbd-FW-aCj" firstAttribute="leading" secondItem="LEA-DF-JOL" secondAttribute="leading" id="RQw-G2-sQM"></constraint>
+                    <constraint firstItem="LEA-DF-JOL" firstAttribute="leading" secondItem="RDY-XH-Dc9" secondAttribute="leading" id="atT-Na-pmd"></constraint>
+                    <constraint firstItem="ukm-Z8-DgQ" firstAttribute="leading" secondItem="qbd-FW-aCj" secondAttribute="trailing" constant="5" id="lDi-xf-YSz"></constraint>
+                    <constraint firstItem="ukm-Z8-DgQ" firstAttribute="baseline" secondItem="qbd-FW-aCj" secondAttribute="baseline" id="nuj-7f-SIf"></constraint>
+                    <constraint firstItem="LEA-DF-JOL" firstAttribute="top" secondItem="RDY-XH-Dc9" secondAttribute="bottom" constant="20" id="pmF-EX-kB3"></constraint>
+                    <constraint firstItem="hEo-53-nfF" firstAttribute="baseline" secondItem="LEA-DF-JOL" secondAttribute="baseline" id="x9A-Ie-VYf"></constraint>
+                    <constraint firstAttribute="trailingMargin" secondItem="RDY-XH-Dc9" secondAttribute="trailing" constant="15" id="ysg-Bq-Za9"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="uqe-mq-rRZ" id="wBP-9i-p17"></outlet>
+                <outlet property="carName" destination="RDY-XH-Dc9" id="trd-ol-XJ1"></outlet>
+                <outlet property="oldprice" destination="1ZE-x2-XFo" id="vEn-r7-Q8x"></outlet>
+                <outlet property="price" destination="hEo-53-nfF" id="LG7-i5-54O"></outlet>
+                <outlet property="pricedown" destination="ukm-Z8-DgQ" id="13p-0O-r03"></outlet>
+            </connections>
+            <point key="canvasLocation" x="62" y="98.5"></point>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bnt_xundijia_n.png" width="100" height="30"></image>
+    </resources>
+</document>

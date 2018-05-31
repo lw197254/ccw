@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <view hidden="YES" contentMode="scaleToFill" id="d3e-Qd-1JH" customClass="DelearTypeSwitchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-eE-o9Y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"></rect>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="T8Y-Sn-IW9"></constraint>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOI-l0-5ZV">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"></rect>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29768770970000002" colorSpace="deviceRGB"></color>
+                    <gestureRecognizers></gestureRecognizers>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+            <constraints>
+                <constraint firstItem="rOI-l0-5ZV" firstAttribute="leading" secondItem="d3e-Qd-1JH" secondAttribute="leading" id="5Bp-rJ-uKr"></constraint>
+                <constraint firstItem="uTJ-eE-o9Y" firstAttribute="leading" secondItem="d3e-Qd-1JH" secondAttribute="leading" id="Ug7-fj-Bcj"></constraint>
+                <constraint firstAttribute="trailing" secondItem="rOI-l0-5ZV" secondAttribute="trailing" id="YHL-TM-joF"></constraint>
+                <constraint firstAttribute="bottom" secondItem="rOI-l0-5ZV" secondAttribute="bottom" id="dvK-Hr-Quf"></constraint>
+                <constraint firstItem="uTJ-eE-o9Y" firstAttribute="top" secondItem="d3e-Qd-1JH" secondAttribute="top" id="hqi-2r-si3"></constraint>
+                <constraint firstAttribute="trailing" secondItem="uTJ-eE-o9Y" secondAttribute="trailing" id="hz0-d1-Mse"></constraint>
+                <constraint firstItem="rOI-l0-5ZV" firstAttribute="top" secondItem="uTJ-eE-o9Y" secondAttribute="bottom" id="k31-C4-6Ew"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="otherView" destination="rOI-l0-5ZV" id="hd4-oI-WU7"></outlet>
+                <outlet property="tableView" destination="uTJ-eE-o9Y" id="07l-PZ-Lck"></outlet>
+            </connections>
+        </view>
+    </objects>
+</document>

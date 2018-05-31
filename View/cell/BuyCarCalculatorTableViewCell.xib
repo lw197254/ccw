@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BuyCarCalculatorTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoo-lI-meF">
+                        <rect key="frame" x="15" y="13" width="38" height="18"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoZ-ch-hzv">
+                        <rect key="frame" x="63" y="14" width="225" height="16"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="箭头向右.png" translatesAutoresizingMaskIntoConstraints="NO" id="QS4-Uu-jQQ">
+                        <rect key="frame" x="293" y="16" width="12" height="12"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="O8u-o9-qzl"></constraint>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-me-YWt">
+                        <rect key="frame" x="112" y="12" width="176" height="18"></rect>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"></textInputTraits>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QS4-Uu-jQQ" firstAttribute="leading" secondItem="IoZ-ch-hzv" secondAttribute="trailing" constant="5" id="49c-BO-XFb"></constraint>
+                    <constraint firstItem="FEz-me-YWt" firstAttribute="leading" secondItem="qoo-lI-meF" secondAttribute="trailing" constant="5" id="Ed2-Ta-iCA"></constraint>
+                    <constraint firstItem="FEz-me-YWt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H3R-0z-Eqc"></constraint>
+                    <constraint firstItem="IoZ-ch-hzv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KfU-wQ-eSu"></constraint>
+                    <constraint firstItem="QS4-Uu-jQQ" firstAttribute="leading" secondItem="FEz-me-YWt" secondAttribute="trailing" constant="5" id="Uzj-5B-yNn"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="QS4-Uu-jQQ" secondAttribute="trailing" constant="15" id="WHd-wY-tTY"></constraint>
+                    <constraint firstItem="qoo-lI-meF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yme-Sj-YmV"></constraint>
+                    <constraint firstItem="qoo-lI-meF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ec0-xt-6xE"></constraint>
+                    <constraint firstItem="IoZ-ch-hzv" firstAttribute="leading" secondItem="qoo-lI-meF" secondAttribute="trailing" constant="10" id="naA-hi-jls"></constraint>
+                    <constraint firstItem="QS4-Uu-jQQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="quA-SH-D7O"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightImageView" destination="QS4-Uu-jQQ" id="FR7-mP-mbd"></outlet>
+                <outlet property="subTitleLabel" destination="IoZ-ch-hzv" id="bZT-l0-Sau"></outlet>
+                <outlet property="titleLabel" destination="qoo-lI-meF" id="7wA-BN-8Ry"></outlet>
+                <outlet property="valueField" destination="FEz-me-YWt" id="Fdv-dI-mUV"></outlet>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="箭头向右.png" width="12" height="12"></image>
+    </resources>
+</document>

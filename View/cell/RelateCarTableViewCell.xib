@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="RelateCarTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="116.66666666666667"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-vw-Gpu">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="117"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1323" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-lV-T1w">
+                                <rect key="frame" x="162" y="70" width="28" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-wA-n1P">
+                                <rect key="frame" x="162" y="10" width="134" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a81-TQ-OoA">
+                                <rect key="frame" x="15" y="37" width="17" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="0Qm-HJ-ECa"/>
+                                    <constraint firstAttribute="height" constant="22" id="ZLx-a5-MdV"/>
+                                </constraints>
+                                <state key="normal" image="未选中.png"/>
+                                <state key="selected" title="aa" image="选中.png"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认图片80_60.png" translatesAutoresizingMaskIntoConstraints="NO" id="sc0-Gg-vgK">
+                                <rect key="frame" x="47" y="10" width="100" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Nb4-Q5-Cle"/>
+                                    <constraint firstAttribute="height" constant="75" id="y7L-9g-wBT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="123123123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9g-7b-0va">
+                                <rect key="frame" x="195" y="67" width="133" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.14499999999999999" blue="0.14499999999999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a81-TQ-OoA" firstAttribute="leading" secondItem="2KF-vw-Gpu" secondAttribute="leading" constant="15" id="35u-ST-SPJ"/>
+                            <constraint firstAttribute="trailing" secondItem="GOv-wA-n1P" secondAttribute="trailing" constant="15" id="4AF-SP-eJp"/>
+                            <constraint firstItem="LGP-lV-T1w" firstAttribute="leading" secondItem="GOv-wA-n1P" secondAttribute="leading" id="6hz-Re-g1g"/>
+                            <constraint firstItem="GOv-wA-n1P" firstAttribute="leading" secondItem="sc0-Gg-vgK" secondAttribute="trailing" constant="15" id="6lj-ia-J6Q"/>
+                            <constraint firstItem="sc0-Gg-vgK" firstAttribute="top" secondItem="2KF-vw-Gpu" secondAttribute="top" constant="10" id="87j-Eo-VJd"/>
+                            <constraint firstItem="K9g-7b-0va" firstAttribute="leading" secondItem="LGP-lV-T1w" secondAttribute="trailing" constant="5" id="NqD-jI-IRh"/>
+                            <constraint firstItem="a81-TQ-OoA" firstAttribute="centerY" secondItem="sc0-Gg-vgK" secondAttribute="centerY" id="NwR-So-lze"/>
+                            <constraint firstAttribute="trailing" secondItem="K9g-7b-0va" secondAttribute="trailing" constant="-17" id="Wqt-4N-to5"/>
+                            <constraint firstItem="K9g-7b-0va" firstAttribute="bottom" secondItem="LGP-lV-T1w" secondAttribute="bottom" id="XBH-Ne-CTN"/>
+                            <constraint firstAttribute="bottom" secondItem="sc0-Gg-vgK" secondAttribute="bottom" priority="250" constant="10" id="b2F-PM-EHI"/>
+                            <constraint firstItem="GOv-wA-n1P" firstAttribute="top" secondItem="sc0-Gg-vgK" secondAttribute="top" id="b4l-re-enp"/>
+                            <constraint firstItem="LGP-lV-T1w" firstAttribute="bottom" secondItem="sc0-Gg-vgK" secondAttribute="bottom" id="f42-yj-jEI"/>
+                            <constraint firstItem="sc0-Gg-vgK" firstAttribute="leading" secondItem="a81-TQ-OoA" secondAttribute="trailing" constant="15" id="sWH-gO-4vm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2KF-vw-Gpu" secondAttribute="trailing" id="IiN-VX-vsq"/>
+                    <constraint firstItem="2KF-vw-Gpu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OcC-4e-Qey"/>
+                    <constraint firstAttribute="bottom" secondItem="2KF-vw-Gpu" secondAttribute="bottom" id="pzr-zg-thh"/>
+                    <constraint firstItem="2KF-vw-Gpu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zDQ-ib-NF8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="2KF-vw-Gpu" id="QSz-vY-F7a"/>
+                <outlet property="factory" destination="LGP-lV-T1w" id="ixR-Mw-4pR"/>
+                <outlet property="img" destination="sc0-Gg-vgK" id="FyS-PJ-S8v"/>
+                <outlet property="price" destination="K9g-7b-0va" id="gSN-bU-hg6"/>
+                <outlet property="selectButton" destination="a81-TQ-OoA" id="ZL4-zX-wgF"/>
+                <outlet property="title" destination="GOv-wA-n1P" id="spF-65-pUn"/>
+            </connections>
+            <point key="canvasLocation" x="130.5" y="32.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未选中.png" width="17" height="17"/>
+        <image name="选中.png" width="17" height="17"/>
+        <image name="默认图片80_60.png" width="80" height="60"/>
+    </resources>
+</document>

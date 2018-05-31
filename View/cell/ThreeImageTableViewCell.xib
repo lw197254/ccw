@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="ThreeImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="202"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="201.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWM-6v-dey">
+                        <rect key="frame" x="23" y="18" width="105" height="80"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="IQB-M6-VGW"></constraint>
+                            <constraint firstAttribute="height" constant="80" id="TB4-TF-DAN"></constraint>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LIG-qt-D6V">
+                        <rect key="frame" x="143" y="18" width="105" height="80"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="9YO-FR-d8l"></constraint>
+                            <constraint firstAttribute="width" constant="105" id="Env-Up-Cs2"></constraint>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLP-Mk-sct">
+                        <rect key="frame" x="272" y="18" width="105" height="80"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="2Hs-cb-eor"></constraint>
+                            <constraint firstAttribute="height" constant="80" id="LZU-Jk-ICL"></constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LIG-qt-D6V" firstAttribute="leading" secondItem="FWM-6v-dey" secondAttribute="trailing" constant="15" id="3nG-kJ-gSj"></constraint>
+                    <constraint firstAttribute="trailingMargin" secondItem="qLP-Mk-sct" secondAttribute="trailing" constant="15" id="BcJ-I2-vZv"></constraint>
+                    <constraint firstItem="FWM-6v-dey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="TZo-Ue-gHx"></constraint>
+                    <constraint firstItem="LIG-qt-D6V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Ycn-Z7-TxJ"></constraint>
+                    <constraint firstItem="FWM-6v-dey" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="gEP-dm-L4C"></constraint>
+                    <constraint firstItem="qLP-Mk-sct" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="np6-Wh-0pt"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="73" y="198"></point>
+        </tableViewCell>
+    </objects>
+</document>

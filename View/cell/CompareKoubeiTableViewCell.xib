@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="CompareKoubeiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjx-Gg-OqH" customClass="CompareKoubeiView">
+                        <rect key="frame" x="0.0" y="10" width="158.5" height="143.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-Zv-yz9" customClass="CompareKoubeiView">
+                        <rect key="frame" x="159.5" y="10" width="158.5" height="143.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9c-Vw-9io">
+                        <rect key="frame" x="158.5" y="10" width="1" height="143.5"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.59999999999999998" id="daD-2G-JEM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WTE-Zv-yz9" secondAttribute="bottom" id="0Et-Zu-e3x"/>
+                    <constraint firstAttribute="bottom" secondItem="Zjx-Gg-OqH" secondAttribute="bottom" id="1VI-EH-PQT"/>
+                    <constraint firstItem="j9c-Vw-9io" firstAttribute="leading" secondItem="Zjx-Gg-OqH" secondAttribute="trailing" id="5cu-7c-0e2"/>
+                    <constraint firstItem="Zjx-Gg-OqH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BR0-rj-zi3"/>
+                    <constraint firstAttribute="bottom" secondItem="j9c-Vw-9io" secondAttribute="bottom" id="LE2-xa-TgG"/>
+                    <constraint firstItem="Zjx-Gg-OqH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TkX-AO-eGR"/>
+                    <constraint firstItem="j9c-Vw-9io" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ePE-OH-Z97"/>
+                    <constraint firstItem="WTE-Zv-yz9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jM0-jv-Qy0"/>
+                    <constraint firstItem="Zjx-Gg-OqH" firstAttribute="width" secondItem="WTE-Zv-yz9" secondAttribute="width" id="loi-ts-Rub"/>
+                    <constraint firstItem="WTE-Zv-yz9" firstAttribute="leading" secondItem="j9c-Vw-9io" secondAttribute="trailing" id="oJ2-Af-Jl3"/>
+                    <constraint firstAttribute="trailing" secondItem="WTE-Zv-yz9" secondAttribute="trailing" id="yd0-aY-qyT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftView" destination="Zjx-Gg-OqH" id="Teg-r0-rsD"/>
+                <outlet property="lineView" destination="j9c-Vw-9io" id="vPm-OB-dh3"/>
+                <outlet property="rightView" destination="WTE-Zv-yz9" id="frF-9H-nGL"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="160"/>
+        </tableViewCell>
+    </objects>
+</document>

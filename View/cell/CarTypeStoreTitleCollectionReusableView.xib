@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CarTypeStoreTitleCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="66"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-XR-P5S">
+                    <rect key="frame" x="0.0" y="0.0" width="358" height="45"></rect>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed0-Fs-T6r">
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="44"></rect>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jz2-4K-JVh">
+                                    <rect key="frame" x="0.0" y="0.0" width="179" height="44"></rect>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                                    <inset key="titleEdgeInsets" minX="-17" minY="0.0" maxX="17" maxY="0.0"></inset>
+                                    <inset key="imageEdgeInsets" minX="59" minY="0.0" maxX="-59" maxY="0.0"></inset>
+                                    <state key="normal" title="综合排序" image="箭头向下.png">
+                                        <color key="titleColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                                    </state>
+                                    <state key="selected" image="箭头向上.png"></state>
+                                    <state key="highlighted" image="箭头向上.png"></state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg7-kd-bRa">
+                                    <rect key="frame" x="180" y="0.0" width="178" height="44"></rect>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                                    <inset key="titleEdgeInsets" minX="-17" minY="0.0" maxX="17" maxY="0.0"></inset>
+                                    <inset key="imageEdgeInsets" minX="35" minY="0.0" maxX="-35" maxY="0.0"></inset>
+                                    <state key="normal" title="4S店" image="箭头向下.png">
+                                        <color key="titleColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                                    </state>
+                                    <state key="selected" image="箭头向上.png"></state>
+                                    <state key="highlighted" image="箭头向上.png"></state>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiD-L4-W8Z">
+                                    <rect key="frame" x="179" y="7" width="1" height="30"></rect>
+                                    <color key="backgroundColor" red="0.8901" green="0.8901" blue="0.8901" alpha="1" colorSpace="deviceRGB"></color>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="0Rh-oU-v7I"></constraint>
+                                        <constraint firstAttribute="width" constant="0.5" id="WQ6-L9-VfW"></constraint>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="wg7-kd-bRa" secondAttribute="bottom" id="4dF-Ee-xf5"></constraint>
+                                <constraint firstAttribute="height" constant="44" id="7xk-lQ-UC9"></constraint>
+                                <constraint firstItem="wg7-kd-bRa" firstAttribute="leading" secondItem="QiD-L4-W8Z" secondAttribute="trailing" id="9sh-xf-K99"></constraint>
+                                <constraint firstAttribute="trailing" secondItem="wg7-kd-bRa" secondAttribute="trailing" id="CV6-9h-eXn"></constraint>
+                                <constraint firstItem="jz2-4K-JVh" firstAttribute="leading" secondItem="Ed0-Fs-T6r" secondAttribute="leading" id="FPd-cP-n43"></constraint>
+                                <constraint firstItem="QiD-L4-W8Z" firstAttribute="leading" secondItem="jz2-4K-JVh" secondAttribute="trailing" id="GDw-c8-rsN"></constraint>
+                                <constraint firstAttribute="bottom" secondItem="jz2-4K-JVh" secondAttribute="bottom" id="Yoo-71-Qtm"></constraint>
+                                <constraint firstItem="wg7-kd-bRa" firstAttribute="top" secondItem="Ed0-Fs-T6r" secondAttribute="top" id="dnG-pZ-ugI"></constraint>
+                                <constraint firstItem="QiD-L4-W8Z" firstAttribute="centerX" secondItem="Ed0-Fs-T6r" secondAttribute="centerX" id="eGX-5e-Lfk"></constraint>
+                                <constraint firstItem="QiD-L4-W8Z" firstAttribute="centerY" secondItem="Ed0-Fs-T6r" secondAttribute="centerY" id="gnk-ee-E78"></constraint>
+                                <constraint firstItem="jz2-4K-JVh" firstAttribute="top" secondItem="Ed0-Fs-T6r" secondAttribute="top" id="h6E-PQ-F76"></constraint>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cT4-cX-ZRf" userLabel="lineView">
+                            <rect key="frame" x="0.0" y="44" width="358" height="1"></rect>
+                            <color key="backgroundColor" red="0.8901" green="0.8901" blue="0.8901" alpha="1" colorSpace="deviceRGB"></color>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="cEx-Dk-UDF"></constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9450" green="0.9450" blue="0.9450" alpha="1" colorSpace="deviceRGB"></color>
+                    <constraints>
+                        <constraint firstItem="Ed0-Fs-T6r" firstAttribute="leading" secondItem="0zg-XR-P5S" secondAttribute="leading" id="M5t-sy-ySa"></constraint>
+                        <constraint firstAttribute="trailing" secondItem="cT4-cX-ZRf" secondAttribute="trailing" id="Pop-Pj-dh1"></constraint>
+                        <constraint firstItem="cT4-cX-ZRf" firstAttribute="leading" secondItem="0zg-XR-P5S" secondAttribute="leading" id="dna-lv-ePw"></constraint>
+                        <constraint firstAttribute="bottom" secondItem="cT4-cX-ZRf" secondAttribute="bottom" id="hIR-o0-KJ7"></constraint>
+                        <constraint firstItem="cT4-cX-ZRf" firstAttribute="top" secondItem="Ed0-Fs-T6r" secondAttribute="bottom" id="hMX-T7-zDn"></constraint>
+                        <constraint firstItem="Ed0-Fs-T6r" firstAttribute="top" secondItem="0zg-XR-P5S" secondAttribute="top" id="vPc-pQ-qBS"></constraint>
+                        <constraint firstAttribute="trailing" secondItem="Ed0-Fs-T6r" secondAttribute="trailing" id="w9Y-yT-45Y"></constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0zg-XR-P5S" secondAttribute="bottom" priority="250" id="Nre-5D-3dL"></constraint>
+                <constraint firstItem="0zg-XR-P5S" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="WED-Dx-vvc"></constraint>
+                <constraint firstAttribute="trailing" secondItem="0zg-XR-P5S" secondAttribute="trailing" id="e4F-Hz-gh5"></constraint>
+                <constraint firstItem="0zg-XR-P5S" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="uUt-lP-lgy"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="lineView1" destination="cT4-cX-ZRf" id="IqL-E9-xpX"></outlet>
+                <outlet property="lineView2" destination="QiD-L4-W8Z" id="HZ8-s1-5nA"></outlet>
+                <outlet property="sortButton" destination="jz2-4K-JVh" id="2g8-mn-cpc"></outlet>
+                <outlet property="storeButton" destination="wg7-kd-bRa" id="z0S-pU-Bij"></outlet>
+            </connections>
+            <point key="canvasLocation" x="51" y="113"></point>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="箭头向上.png" width="12" height="12"></image>
+        <image name="箭头向下.png" width="12" height="12"></image>
+    </resources>
+</document>

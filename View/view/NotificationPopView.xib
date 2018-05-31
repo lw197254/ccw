@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationPopView">
+            <connections>
+                <outlet property="backgroundView" destination="aFX-PT-pWs" id="0ar-NB-fgS"/>
+                <outlet property="message" destination="F2H-zE-yyt" id="2o7-Xk-Eb7"/>
+                <outlet property="title" destination="Lx5-6Q-3cU" id="1rz-NW-SQm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MFT-WO-PV1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFX-PT-pWs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_xiaoxi.png" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-H6-hus">
+                            <rect key="frame" x="47.5" y="162.5" width="280" height="341"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="yKp-H6-hus" secondAttribute="height" multiplier="55:67" id="IDX-9E-6Ye"/>
+                                <constraint firstAttribute="width" constant="280" id="gA5-mE-1ch"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启通知后您可以" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-6Q-3cU">
+                            <rect key="frame" x="98.5" y="292.5" width="178.5" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-zE-yyt">
+                            <rect key="frame" x="48" y="351" width="280" height="19.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <color key="NSColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgX-a8-KBc">
+                            <rect key="frame" x="47.5" y="458.5" width="280" height="1"/>
+                            <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ft4-m9-R1S"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-MQ-HAI">
+                            <rect key="frame" x="47.5" y="459.5" width="280" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="gb4-iL-oTN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="去开启">
+                                <color key="titleColor" red="0.26666666666666666" green="0.49803921568627452" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="startOpen:" destination="-1" eventType="touchUpInside" id="WaP-LB-fvw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-nl-MD3">
+                            <rect key="frame" x="307.5" y="178.5" width="20" height="22"/>
+                            <state key="normal" image="ic_close_pop.png"/>
+                            <connections>
+                                <action selector="closeclick:" destination="-1" eventType="touchUpInside" id="Hn4-Gq-iZ0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="F2H-zE-yyt" firstAttribute="centerX" secondItem="yKp-H6-hus" secondAttribute="centerX" id="60j-ua-19N"/>
+                        <constraint firstItem="AQa-nl-MD3" firstAttribute="trailing" secondItem="yKp-H6-hus" secondAttribute="trailing" id="C8Q-Ry-bO1"/>
+                        <constraint firstItem="SgX-a8-KBc" firstAttribute="width" secondItem="yKp-H6-hus" secondAttribute="width" id="GlH-tQ-Krw"/>
+                        <constraint firstItem="F2H-zE-yyt" firstAttribute="top" secondItem="Lx5-6Q-3cU" secondAttribute="bottom" constant="32" id="RYr-ao-sR6"/>
+                        <constraint firstItem="cmu-MQ-HAI" firstAttribute="bottom" secondItem="yKp-H6-hus" secondAttribute="bottom" id="Rrs-rU-9aB"/>
+                        <constraint firstItem="Lx5-6Q-3cU" firstAttribute="centerX" secondItem="yKp-H6-hus" secondAttribute="centerX" id="VMg-ur-ekL"/>
+                        <constraint firstItem="yKp-H6-hus" firstAttribute="centerY" secondItem="aFX-PT-pWs" secondAttribute="centerY" id="g2x-0d-vCv"/>
+                        <constraint firstItem="cmu-MQ-HAI" firstAttribute="width" secondItem="SgX-a8-KBc" secondAttribute="width" id="hCN-uF-iLK"/>
+                        <constraint firstItem="AQa-nl-MD3" firstAttribute="top" secondItem="yKp-H6-hus" secondAttribute="top" constant="16" id="ia5-lU-Wgg"/>
+                        <constraint firstItem="F2H-zE-yyt" firstAttribute="width" secondItem="yKp-H6-hus" secondAttribute="width" id="pR1-xH-y1t"/>
+                        <constraint firstItem="Lx5-6Q-3cU" firstAttribute="top" secondItem="yKp-H6-hus" secondAttribute="top" constant="130" id="qxl-Mf-tus"/>
+                        <constraint firstItem="cmu-MQ-HAI" firstAttribute="centerX" secondItem="yKp-H6-hus" secondAttribute="centerX" id="rzT-gW-a55"/>
+                        <constraint firstItem="cmu-MQ-HAI" firstAttribute="top" secondItem="SgX-a8-KBc" secondAttribute="bottom" id="tYk-k6-k93"/>
+                        <constraint firstItem="SgX-a8-KBc" firstAttribute="centerX" secondItem="yKp-H6-hus" secondAttribute="centerX" id="yGY-GM-bkV"/>
+                        <constraint firstItem="yKp-H6-hus" firstAttribute="centerX" secondItem="aFX-PT-pWs" secondAttribute="centerX" id="yR8-XO-dZb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aFX-PT-pWs" secondAttribute="bottom" id="If0-gS-h5t"/>
+                <constraint firstItem="aFX-PT-pWs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R33-uI-dKj"/>
+                <constraint firstItem="aFX-PT-pWs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Waf-Ha-WO9"/>
+                <constraint firstAttribute="trailing" secondItem="aFX-PT-pWs" secondAttribute="trailing" id="pBR-tu-jNV"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="103.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_xiaoxi.png" width="220" height="238"/>
+        <image name="ic_close_pop.png" width="20" height="20"/>
+    </resources>
+</document>

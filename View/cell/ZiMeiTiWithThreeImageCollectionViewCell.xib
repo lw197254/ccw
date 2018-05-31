@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fY9-Lu-g1Z" customClass="ZiMeiTiWithThreeImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100多万的保时捷都买了，你还在乎油钱？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNU-xf-HLq">
+                        <rect key="frame" x="15" y="10" width="429" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nil" translatesAutoresizingMaskIntoConstraints="NO" id="dSR-Vp-ayi">
+                        <rect key="frame" x="15" y="41" width="141" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dSR-Vp-ayi" secondAttribute="height" multiplier="3:2" id="xro-lc-PfT"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nil" translatesAutoresizingMaskIntoConstraints="NO" id="doA-74-Noj">
+                        <rect key="frame" x="159" y="41" width="141" height="94"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkP-S8-30V">
+                        <rect key="frame" x="15" y="145" width="16" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.73329999999999995" green="0.73329999999999995" blue="0.73329999999999995" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXm-Lg-tAp">
+                        <rect key="frame" x="403" y="141.5" width="41" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="buO-KB-XZ0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.73329999999999995" green="0.73329999999999995" blue="0.73329999999999995" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nil" translatesAutoresizingMaskIntoConstraints="NO" id="BEP-OK-3OJ">
+                        <rect key="frame" x="303" y="41" width="141" height="94"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dkP-S8-30V" firstAttribute="top" secondItem="dSR-Vp-ayi" secondAttribute="bottom" constant="10" id="2Fg-Iq-wiz"/>
+                <constraint firstItem="iNU-xf-HLq" firstAttribute="leading" secondItem="fY9-Lu-g1Z" secondAttribute="leading" constant="15" id="2u1-ep-7Gc"/>
+                <constraint firstItem="dSR-Vp-ayi" firstAttribute="width" secondItem="doA-74-Noj" secondAttribute="width" id="31Z-tH-wjN"/>
+                <constraint firstItem="doA-74-Noj" firstAttribute="height" secondItem="BEP-OK-3OJ" secondAttribute="height" id="9ex-oY-mcm"/>
+                <constraint firstItem="BXm-Lg-tAp" firstAttribute="centerY" secondItem="dkP-S8-30V" secondAttribute="centerY" id="CxB-SV-Ds6"/>
+                <constraint firstItem="BEP-OK-3OJ" firstAttribute="leading" secondItem="doA-74-Noj" secondAttribute="trailing" constant="3" id="HBu-Si-hK1"/>
+                <constraint firstAttribute="bottom" secondItem="dkP-S8-30V" secondAttribute="bottom" priority="250" constant="10" id="LIx-0S-cTt"/>
+                <constraint firstItem="dkP-S8-30V" firstAttribute="leading" secondItem="fY9-Lu-g1Z" secondAttribute="leading" constant="15" id="P86-6a-2sz"/>
+                <constraint firstItem="dSR-Vp-ayi" firstAttribute="top" secondItem="iNU-xf-HLq" secondAttribute="bottom" constant="10" id="QjH-Yo-8t2"/>
+                <constraint firstItem="iNU-xf-HLq" firstAttribute="top" secondItem="fY9-Lu-g1Z" secondAttribute="top" constant="10" id="SAm-Jo-dvm"/>
+                <constraint firstAttribute="trailing" secondItem="BEP-OK-3OJ" secondAttribute="trailing" constant="15" id="STn-iE-R65"/>
+                <constraint firstAttribute="trailing" secondItem="iNU-xf-HLq" secondAttribute="trailing" constant="15" id="WiG-WF-tsl"/>
+                <constraint firstItem="dSR-Vp-ayi" firstAttribute="height" secondItem="doA-74-Noj" secondAttribute="height" id="Yfr-C0-s8G"/>
+                <constraint firstAttribute="trailing" secondItem="BXm-Lg-tAp" secondAttribute="trailing" constant="15" id="ZQw-z7-SkA"/>
+                <constraint firstItem="BEP-OK-3OJ" firstAttribute="top" secondItem="iNU-xf-HLq" secondAttribute="bottom" constant="10" id="cHl-Rd-G5A"/>
+                <constraint firstItem="dSR-Vp-ayi" firstAttribute="leading" secondItem="fY9-Lu-g1Z" secondAttribute="leading" constant="15" id="kLR-yN-dbZ"/>
+                <constraint firstItem="doA-74-Noj" firstAttribute="top" secondItem="iNU-xf-HLq" secondAttribute="bottom" constant="10" id="uEh-rV-Dq0"/>
+                <constraint firstItem="doA-74-Noj" firstAttribute="width" secondItem="BEP-OK-3OJ" secondAttribute="width" id="voN-Ny-geY"/>
+                <constraint firstItem="doA-74-Noj" firstAttribute="leading" secondItem="dSR-Vp-ayi" secondAttribute="trailing" constant="3" id="xs6-mj-ghc"/>
+            </constraints>
+            <size key="customSize" width="459" height="192"/>
+            <connections>
+                <outlet property="imageleft" destination="dSR-Vp-ayi" id="sRL-KS-Gy8"/>
+                <outlet property="imagemiddle" destination="doA-74-Noj" id="6d4-se-y4k"/>
+                <outlet property="imageright" destination="BEP-OK-3OJ" id="vbN-Nz-ift"/>
+                <outlet property="time" destination="BXm-Lg-tAp" id="mJB-e8-W32"/>
+                <outlet property="title" destination="iNU-xf-HLq" id="FFW-Gr-KLY"/>
+                <outlet property="views" destination="dkP-S8-30V" id="ht1-KI-5tq"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="131"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nil" width="16" height="16"/>
+    </resources>
+</document>

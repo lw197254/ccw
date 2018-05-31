@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindCarByGroupViewController">
+            <connections>
+                <outlet property="contentView" destination="njx-lG-yeF" id="lXP-AD-8hb"/>
+                <outlet property="headerSelectionView" destination="o4I-9x-iuV" id="hxo-4n-qBz"/>
+                <outlet property="scrollView" destination="YiR-74-Deg" id="pbq-Ra-Vpq"/>
+                <outlet property="view" destination="uPf-wH-0V9" id="LzZ-VU-kaF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uPf-wH-0V9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4I-9x-iuV" customClass="HTHorizontalSelectionList">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bZC-18-xso"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YiR-74-Deg">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njx-lG-yeF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="njx-lG-yeF" firstAttribute="centerY" secondItem="YiR-74-Deg" secondAttribute="centerY" id="7TG-ZI-mBu"/>
+                        <constraint firstItem="njx-lG-yeF" firstAttribute="top" secondItem="YiR-74-Deg" secondAttribute="top" id="BfB-FL-IiP"/>
+                        <constraint firstAttribute="trailing" secondItem="njx-lG-yeF" secondAttribute="trailing" id="IeL-Ru-Me3"/>
+                        <constraint firstAttribute="bottom" secondItem="njx-lG-yeF" secondAttribute="bottom" id="kca-Fj-KsQ"/>
+                        <constraint firstItem="njx-lG-yeF" firstAttribute="leading" secondItem="YiR-74-Deg" secondAttribute="leading" id="sf6-vx-D0f"/>
+                        <constraint firstItem="njx-lG-yeF" firstAttribute="width" secondItem="YiR-74-Deg" secondAttribute="width" priority="100" id="xGu-G1-4f2"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LYh-G0-XNe"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o4I-9x-iuV" secondAttribute="trailing" id="0T6-FN-Bhl"/>
+                <constraint firstItem="YiR-74-Deg" firstAttribute="top" secondItem="o4I-9x-iuV" secondAttribute="bottom" id="EC3-sA-67e"/>
+                <constraint firstItem="o4I-9x-iuV" firstAttribute="top" secondItem="uPf-wH-0V9" secondAttribute="top" id="QsT-8X-Aqj"/>
+                <constraint firstItem="YiR-74-Deg" firstAttribute="leading" secondItem="uPf-wH-0V9" secondAttribute="leading" id="SPa-CW-Mpt"/>
+                <constraint firstAttribute="trailing" secondItem="YiR-74-Deg" secondAttribute="trailing" id="ddh-i8-ift"/>
+                <constraint firstItem="o4I-9x-iuV" firstAttribute="leading" secondItem="uPf-wH-0V9" secondAttribute="leading" id="iy2-xX-oRL"/>
+                <constraint firstAttribute="bottom" secondItem="YiR-74-Deg" secondAttribute="bottom" id="vJn-39-vPd"/>
+            </constraints>
+            <point key="canvasLocation" x="56.5" y="119.5"/>
+        </view>
+    </objects>
+</document>

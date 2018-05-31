@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="BrandTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="65"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="64.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-AX-dnb">
+                        <rect key="frame" x="65" y="0.0" width="39.5" height="64"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="60" id="8ad-F2-a9r"></constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认汽车品牌.png" translatesAutoresizingMaskIntoConstraints="NO" id="HoV-Cr-teW">
+                        <rect key="frame" x="15" y="15" width="35" height="35"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Nl6-xC-fbA"></constraint>
+                            <constraint firstAttribute="width" constant="35" id="mas-It-Bvd"></constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HoV-Cr-teW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AX8-lH-9Sl"></constraint>
+                    <constraint firstItem="Av6-AX-dnb" firstAttribute="leading" secondItem="HoV-Cr-teW" secondAttribute="trailing" constant="15" id="Dpt-Ai-bqD"></constraint>
+                    <constraint firstItem="HoV-Cr-teW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Iud-1w-NCq"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="Av6-AX-dnb" secondAttribute="bottom" id="SsM-Hn-EeP"></constraint>
+                    <constraint firstItem="Av6-AX-dnb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jI9-UA-dHh"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"></inset>
+            <connections>
+                <outlet property="headerImageView" destination="HoV-Cr-teW" id="XHj-Qh-Gj5"></outlet>
+                <outlet property="titleLabel" destination="Av6-AX-dnb" id="2VL-V8-wlO"></outlet>
+            </connections>
+            <point key="canvasLocation" x="-111.5" y="108.5"></point>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="默认汽车品牌.png" width="35" height="35"></image>
+    </resources>
+</document>

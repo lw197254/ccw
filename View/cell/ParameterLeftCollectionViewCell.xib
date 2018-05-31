@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2eL-ix-Ws1" customClass="ParameterLeftCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="75"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="75"></rect>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPt-yC-Ohc">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"></rect>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZd-ED-Bd3">
+                                <rect key="frame" x="7" y="0.0" width="63" height="75"></rect>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"></fontDescription>
+                                <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                                <nil key="highlightedColor"></nil>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fZd-ED-Bd3" secondAttribute="trailing" constant="5" id="L1v-Cd-hcC"></constraint>
+                            <constraint firstAttribute="width" constant="75" id="Mnp-U6-b2f"></constraint>
+                            <constraint firstItem="fZd-ED-Bd3" firstAttribute="leading" secondItem="rPt-yC-Ohc" secondAttribute="leading" constant="7" id="bho-Vv-Kto"></constraint>
+                            <constraint firstAttribute="bottom" secondItem="fZd-ED-Bd3" secondAttribute="bottom" id="kgR-eE-2l0"></constraint>
+                            <constraint firstItem="fZd-ED-Bd3" firstAttribute="top" secondItem="rPt-yC-Ohc" secondAttribute="top" id="oDI-2d-SlI"></constraint>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rPt-yC-Ohc" firstAttribute="leading" secondItem="2eL-ix-Ws1" secondAttribute="leading" id="1Mz-xX-UDs"></constraint>
+                <constraint firstAttribute="bottom" secondItem="rPt-yC-Ohc" secondAttribute="bottom" id="F7E-8u-BpB"></constraint>
+                <constraint firstItem="rPt-yC-Ohc" firstAttribute="top" secondItem="2eL-ix-Ws1" secondAttribute="top" id="aa7-eD-vEb"></constraint>
+            </constraints>
+            <size key="customSize" width="148" height="75"></size>
+            <connections>
+                <outlet property="titleLabel" destination="fZd-ED-Bd3" id="aIe-vk-ael"></outlet>
+            </connections>
+            <point key="canvasLocation" x="81" y="135.5"></point>
+        </collectionViewCell>
+    </objects>
+</document>

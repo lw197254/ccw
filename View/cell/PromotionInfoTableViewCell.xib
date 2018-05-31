@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="PromotionInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="122"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="121.5"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sale.png" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-r9-RCB">
+                        <rect key="frame" x="15" y="10" width="15" height="15"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Ypw-rt-zQO"></constraint>
+                            <constraint firstAttribute="width" constant="15" id="eqs-OT-MYA"></constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-qs-Xvl">
+                        <rect key="frame" x="35" y="34" width="29" height="14"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCV-Pp-Y4C">
+                        <rect key="frame" x="72" y="34" width="30" height="13"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="fjL-Am-nz1"></constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUr-26-cwO">
+                        <rect key="frame" x="222" y="34" width="29" height="14"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k18-Sf-Xf1">
+                        <rect key="frame" x="35" y="10" width="36" height="17"></rect>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                                    <font key="NSFont" metaFont="system" size="14"></font>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"></paragraphStyle>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k18-Sf-Xf1" firstAttribute="leading" secondItem="2S3-r9-RCB" secondAttribute="trailing" constant="5" id="0Ct-73-TcS"></constraint>
+                    <constraint firstItem="2S3-r9-RCB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8NW-q5-Chg"></constraint>
+                    <constraint firstItem="FUr-26-cwO" firstAttribute="centerY" secondItem="Uvb-qs-Xvl" secondAttribute="centerY" id="Eor-G1-A51"></constraint>
+                    <constraint firstItem="uCV-Pp-Y4C" firstAttribute="leading" secondItem="Uvb-qs-Xvl" secondAttribute="trailing" constant="8" id="NEM-rQ-TMs"></constraint>
+                    <constraint firstItem="k18-Sf-Xf1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NPz-ul-edC"></constraint>
+                    <constraint firstItem="uCV-Pp-Y4C" firstAttribute="centerY" secondItem="Uvb-qs-Xvl" secondAttribute="centerY" id="cz5-0X-nWM"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="Uvb-qs-Xvl" secondAttribute="bottom" priority="250" constant="10" id="j5R-JQ-wzt"></constraint>
+                    <constraint firstItem="Uvb-qs-Xvl" firstAttribute="top" secondItem="k18-Sf-Xf1" secondAttribute="bottom" constant="7" id="j9G-6x-ogh"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="FUr-26-cwO" secondAttribute="trailing" constant="15" id="jxH-Lh-Y2c"></constraint>
+                    <constraint firstItem="Uvb-qs-Xvl" firstAttribute="leading" secondItem="k18-Sf-Xf1" secondAttribute="leading" id="nNO-yO-rgL"></constraint>
+                    <constraint firstItem="2S3-r9-RCB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qWH-Oo-Sah"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shopName" destination="Uvb-qs-Xvl" id="zbp-p8-X3b"></outlet>
+                <outlet property="shopType" destination="uCV-Pp-Y4C" id="myL-mI-aHS"></outlet>
+                <outlet property="time" destination="FUr-26-cwO" id="SDC-c3-GHQ"></outlet>
+                <outlet property="title" destination="k18-Sf-Xf1" id="PeF-dQ-RK8"></outlet>
+            </connections>
+            <point key="canvasLocation" x="5" y="92"></point>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sale.png" width="15" height="15"></image>
+    </resources>
+</document>

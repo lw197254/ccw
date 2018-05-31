@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ViewLineCollectionCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLq-KI-KCl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"></rect>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"></fontDescription>
+                    <nil key="textColor"></nil>
+                    <nil key="highlightedColor"></nil>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fLq-KI-KCl" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="cb4-Hi-TTb"></constraint>
+                <constraint firstItem="fLq-KI-KCl" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="hhU-dB-B0f"></constraint>
+                <constraint firstAttribute="trailing" secondItem="fLq-KI-KCl" secondAttribute="trailing" id="uwM-mg-aIc"></constraint>
+                <constraint firstAttribute="bottom" secondItem="fLq-KI-KCl" secondAttribute="bottom" id="zDE-lI-iSy"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="uilabel" destination="fLq-KI-KCl" id="p9e-5N-Qus"></outlet>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

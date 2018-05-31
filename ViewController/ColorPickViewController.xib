@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorPickViewController">
+            <connections>
+                <outlet property="tableView" destination="TgJ-kC-YJu" id="7PA-3S-X0F"></outlet>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"></outlet>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"></rect>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"></autoresizingMask>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-kC-YJu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"></rect>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"></color>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TgJ-kC-YJu" secondAttribute="trailing" id="4DW-r4-uzC"></constraint>
+                <constraint firstItem="TgJ-kC-YJu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BlU-Ia-kGT"></constraint>
+                <constraint firstItem="TgJ-kC-YJu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="noI-dJ-yF9"></constraint>
+                <constraint firstAttribute="bottom" secondItem="TgJ-kC-YJu" secondAttribute="bottom" id="otu-bB-reR"></constraint>
+            </constraints>
+        </view>
+    </objects>
+</document>

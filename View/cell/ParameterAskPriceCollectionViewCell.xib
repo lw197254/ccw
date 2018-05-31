@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ParameterAskPriceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="49"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="49"></rect>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anl-sL-5Wj">
+                        <rect key="frame" x="0.0" y="6" width="146" height="37"></rect>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gw0-U9-hxq">
+                                <rect key="frame" x="0.0" y="0.0" width="146" height="16"></rect>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"></fontDescription>
+                                <color key="textColor" red="1.0000" green="0.1450" blue="0.1450" alpha="1" colorSpace="deviceRGB"></color>
+                                <nil key="highlightedColor"></nil>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmf-qb-PlU">
+                                <rect key="frame" x="43" y="19" width="60" height="18"></rect>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="6wr-om-AQq"></constraint>
+                                    <constraint firstAttribute="width" constant="60" id="UkH-0d-IRF"></constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                                <state key="normal" title="询底价" backgroundImage="buttonBlueNormal.png"></state>
+                                <state key="highlighted" backgroundImage="buttonBlueSelected.png"></state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kmf-qb-PlU" secondAttribute="bottom" id="FJL-pP-zDg"></constraint>
+                            <constraint firstItem="kmf-qb-PlU" firstAttribute="centerX" secondItem="Gw0-U9-hxq" secondAttribute="centerX" id="V5b-ud-dMy"></constraint>
+                            <constraint firstItem="kmf-qb-PlU" firstAttribute="top" secondItem="Gw0-U9-hxq" secondAttribute="bottom" constant="3" id="ZAG-3E-Amj"></constraint>
+                            <constraint firstItem="Gw0-U9-hxq" firstAttribute="leading" secondItem="anl-sL-5Wj" secondAttribute="leading" id="iya-hJ-9mU"></constraint>
+                            <constraint firstItem="Gw0-U9-hxq" firstAttribute="top" secondItem="anl-sL-5Wj" secondAttribute="top" id="orU-Xo-ZNO"></constraint>
+                            <constraint firstAttribute="trailing" secondItem="Gw0-U9-hxq" secondAttribute="trailing" id="uFy-x1-Wed"></constraint>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"></color>
+            <constraints>
+                <constraint firstItem="anl-sL-5Wj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="BwB-QL-2Vp"></constraint>
+                <constraint firstItem="anl-sL-5Wj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N23-A9-3hw"></constraint>
+                <constraint firstAttribute="trailing" secondItem="anl-sL-5Wj" secondAttribute="trailing" id="yRu-K2-cdj"></constraint>
+            </constraints>
+            <size key="customSize" width="146" height="49"></size>
+            <connections>
+                <outlet property="askPriceButton" destination="kmf-qb-PlU" id="bul-fo-hCD"></outlet>
+                <outlet property="titleLabel" destination="Gw0-U9-hxq" id="olH-wt-mLD"></outlet>
+            </connections>
+            <point key="canvasLocation" x="80" y="122.5"></point>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="buttonBlueNormal.png" width="15" height="15"></image>
+        <image name="buttonBlueSelected.png" width="15" height="15"></image>
+    </resources>
+</document>

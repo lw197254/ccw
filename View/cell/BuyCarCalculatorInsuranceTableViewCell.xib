@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="68L-lY-75o" customClass="BuyCarCalculatorInsuranceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="68L-lY-75o" id="o49-gP-nP0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ca-YO-rdF">
+                        <rect key="frame" x="43" y="13" width="38" height="18"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hb-kz-VeU">
+                        <rect key="frame" x="91" y="14" width="197" height="16"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"></fontDescription>
+                        <color key="textColor" red="0.6000" green="0.6000" blue="0.6000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCI-sT-aUN">
+                        <rect key="frame" x="250" y="13" width="38" height="18"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="箭头向右.png" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-5a-hxa">
+                        <rect key="frame" x="293" y="16" width="12" height="12"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="0k8-F1-PwW"></constraint>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-1R-9af">
+                        <rect key="frame" x="0.0" y="0.0" width="43" height="43"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9G0-1R-9af" secondAttribute="height" multiplier="1:1" id="OlH-Rx-jxb"></constraint>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                        <state key="normal" image="未选中.png"></state>
+                        <state key="selected" image="选中.png"></state>
+                        <state key="highlighted" image="选中.png"></state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1ca-YO-rdF" firstAttribute="leading" secondItem="9G0-1R-9af" secondAttribute="trailing" id="3s4-Zd-6h3"></constraint>
+                    <constraint firstItem="9G0-1R-9af" firstAttribute="top" secondItem="o49-gP-nP0" secondAttribute="top" id="AUE-04-5UG"></constraint>
+                    <constraint firstItem="CtT-5a-hxa" firstAttribute="leading" secondItem="wCI-sT-aUN" secondAttribute="trailing" constant="5" id="E9G-x0-mc6"></constraint>
+                    <constraint firstItem="3hb-kz-VeU" firstAttribute="centerY" secondItem="o49-gP-nP0" secondAttribute="centerY" id="Efg-U4-mU7"></constraint>
+                    <constraint firstItem="CtT-5a-hxa" firstAttribute="leading" secondItem="3hb-kz-VeU" secondAttribute="trailing" constant="5" id="RGf-26-fV3"></constraint>
+                    <constraint firstItem="wCI-sT-aUN" firstAttribute="centerY" secondItem="o49-gP-nP0" secondAttribute="centerY" id="fdR-e8-Zwn"></constraint>
+                    <constraint firstItem="CtT-5a-hxa" firstAttribute="centerY" secondItem="o49-gP-nP0" secondAttribute="centerY" id="k8R-Ni-yGD"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="CtT-5a-hxa" secondAttribute="trailing" constant="15" id="l2z-2W-ckC"></constraint>
+                    <constraint firstItem="3hb-kz-VeU" firstAttribute="leading" secondItem="1ca-YO-rdF" secondAttribute="trailing" constant="10" id="pye-hP-VkQ"></constraint>
+                    <constraint firstItem="1ca-YO-rdF" firstAttribute="centerY" secondItem="o49-gP-nP0" secondAttribute="centerY" id="qdX-Oo-Mxa"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="9G0-1R-9af" secondAttribute="bottom" id="tfy-FB-4Qb"></constraint>
+                    <constraint firstItem="9G0-1R-9af" firstAttribute="leading" secondItem="o49-gP-nP0" secondAttribute="leading" id="u1f-JA-gOy"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightImageView" destination="CtT-5a-hxa" id="fyr-oJ-uFG"></outlet>
+                <outlet property="selectButton" destination="9G0-1R-9af" id="Mcj-0F-ydz"></outlet>
+                <outlet property="subTitleLabel" destination="3hb-kz-VeU" id="pw1-na-6ac"></outlet>
+                <outlet property="titleLabel" destination="1ca-YO-rdF" id="pMF-zL-F0w"></outlet>
+                <outlet property="valueLabel" destination="wCI-sT-aUN" id="VEy-lS-8FB"></outlet>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未选中.png" width="17" height="17"></image>
+        <image name="箭头向右.png" width="12" height="12"></image>
+        <image name="选中.png" width="17" height="17"></image>
+    </resources>
+</document>

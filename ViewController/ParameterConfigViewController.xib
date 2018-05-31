@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParameterConfigViewController">
+            <connections>
+                <outlet property="classifyButton" destination="cjo-k3-HWT" id="6KM-th-lIJ"/>
+                <outlet property="numbersView" destination="Fgc-eo-g71" id="yVw-E3-Xxv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-eo-g71" customClass="BSNumbersView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-k3-HWT">
+                    <rect key="frame" x="310" y="592" width="50" height="50"/>
+                    <state key="normal" image="悬浮分类按钮.png"/>
+                    <connections>
+                        <action selector="classifyClicked:" destination="-1" eventType="touchUpInside" id="NDq-8e-QNt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fgc-eo-g71" firstAttribute="top" secondItem="wTb-Un-XNx" secondAttribute="top" id="2Qn-ga-kSP"/>
+                <constraint firstItem="Fgc-eo-g71" firstAttribute="leading" secondItem="wTb-Un-XNx" secondAttribute="leading" id="5BC-ze-Alo"/>
+                <constraint firstItem="Fgc-eo-g71" firstAttribute="trailing" secondItem="wTb-Un-XNx" secondAttribute="trailing" id="KwC-zM-ZNv"/>
+                <constraint firstItem="wTb-Un-XNx" firstAttribute="trailing" secondItem="cjo-k3-HWT" secondAttribute="trailing" constant="15" id="M9r-an-Xfj"/>
+                <constraint firstItem="wTb-Un-XNx" firstAttribute="bottom" secondItem="cjo-k3-HWT" secondAttribute="bottom" constant="25" id="a3A-5x-cXc"/>
+                <constraint firstItem="Fgc-eo-g71" firstAttribute="bottom" secondItem="wTb-Un-XNx" secondAttribute="bottom" id="kIN-CB-lst"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wTb-Un-XNx"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="悬浮分类按钮.png" width="50" height="50"/>
+    </resources>
+</document>

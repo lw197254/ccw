@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"></rect>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"></autoresizingMask>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-Ci-DE5">
+                    <rect key="frame" x="0.0" y="417" width="375" height="250"></rect>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9c-ft-T2m">
+                            <rect key="frame" x="0.0" y="34" width="375" height="216"></rect>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="d2F-Ay-dyz"></constraint>
+                                <constraint firstAttribute="height" constant="150" id="lHi-ne-88a"></constraint>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="d2F-Ay-dyz"></exclude>
+                                    <exclude reference="lHi-ne-88a"></exclude>
+                                </mask>
+                            </variation>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-06-hcu">
+                            <rect key="frame" x="334" y="10" width="31" height="30"></rect>
+                            <state key="normal" title="确定"></state>
+                            <connections>
+                                <action selector="confirmClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="M4a-fZ-L1R"></action>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-3S-gKa">
+                            <rect key="frame" x="10" y="10" width="31" height="30"></rect>
+                            <state key="normal" title="取消"></state>
+                            <connections>
+                                <action selector="cancelClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="gnh-tt-XDw"></action>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtx-wh-4Gn">
+                            <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"></rect>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"></fontDescription>
+                            <color key="textColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"></color>
+                            <nil key="highlightedColor"></nil>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"></color>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="a9c-ft-T2m" secondAttribute="trailing" id="07j-dU-aAb"></constraint>
+                        <constraint firstItem="a9c-ft-T2m" firstAttribute="leading" secondItem="6bC-Ci-DE5" secondAttribute="leading" id="3zf-aL-WFD"></constraint>
+                        <constraint firstItem="MhK-3S-gKa" firstAttribute="top" secondItem="6bC-Ci-DE5" secondAttribute="top" constant="10" id="6eg-gO-BzN"></constraint>
+                        <constraint firstAttribute="height" constant="250" id="7Pu-zY-KEf"></constraint>
+                        <constraint firstAttribute="bottom" secondItem="a9c-ft-T2m" secondAttribute="bottom" id="JUL-oW-Xt7"></constraint>
+                        <constraint firstItem="Wfw-06-hcu" firstAttribute="top" secondItem="6bC-Ci-DE5" secondAttribute="top" constant="10" id="LPd-h2-8bv"></constraint>
+                        <constraint firstAttribute="height" priority="250" id="Sp8-31-Gul"></constraint>
+                        <constraint firstItem="dtx-wh-4Gn" firstAttribute="centerX" secondItem="6bC-Ci-DE5" secondAttribute="centerX" id="UYi-G8-iwp"></constraint>
+                        <constraint firstItem="dtx-wh-4Gn" firstAttribute="centerY" secondItem="Wfw-06-hcu" secondAttribute="centerY" id="bWb-U4-Ebn"></constraint>
+                        <constraint firstItem="a9c-ft-T2m" firstAttribute="top" secondItem="MhK-3S-gKa" secondAttribute="bottom" constant="10" id="o3T-cs-YFu"></constraint>
+                        <constraint firstItem="MhK-3S-gKa" firstAttribute="leading" secondItem="6bC-Ci-DE5" secondAttribute="leading" constant="10" id="uB2-sL-vLz"></constraint>
+                        <constraint firstAttribute="trailing" secondItem="Wfw-06-hcu" secondAttribute="trailing" constant="10" id="x8R-bS-pha"></constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Sp8-31-Gul"></exclude>
+                            <exclude reference="o3T-cs-YFu"></exclude>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ize-Td-4od">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="417"></rect>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"></color>
+                    <gestureRecognizers></gestureRecognizers>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="6gb-en-TgI" appends="YES" id="hFN-TZ-cCE"></outletCollection>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"></color>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6bC-Ci-DE5" secondAttribute="trailing" id="KAy-oD-QbP"></constraint>
+                <constraint firstAttribute="trailing" secondItem="ize-Td-4od" secondAttribute="trailing" id="MUO-IQ-ygj"></constraint>
+                <constraint firstItem="6bC-Ci-DE5" firstAttribute="top" secondItem="ize-Td-4od" secondAttribute="bottom" id="R9T-C4-SjQ"></constraint>
+                <constraint firstAttribute="bottom" secondItem="6bC-Ci-DE5" secondAttribute="bottom" id="Seh-v7-Mnu"></constraint>
+                <constraint firstItem="6bC-Ci-DE5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yd0-bq-qxb"></constraint>
+                <constraint firstItem="ize-Td-4od" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="db8-aA-4sV"></constraint>
+                <constraint firstItem="ize-Td-4od" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nYs-Ps-ZRi"></constraint>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="MhK-3S-gKa" id="Xh8-Vf-dea"></outlet>
+                <outlet property="confirmButton" destination="Wfw-06-hcu" id="i3i-ff-MkE"></outlet>
+                <outlet property="pickerView" destination="a9c-ft-T2m" id="Yua-iX-eH5"></outlet>
+                <outlet property="titleLabel" destination="dtx-wh-4Gn" id="r7N-Cl-Y3R"></outlet>
+                <outlet property="whiteBackgroundView" destination="6bC-Ci-DE5" id="Bc6-WD-dVA"></outlet>
+                <outlet property="whiteBackgroundViewHeightConstraint" destination="7Pu-zY-KEf" id="yb4-4H-Tan"></outlet>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="6gb-en-TgI">
+            <connections>
+                <action selector="hideTap:" destination="iN0-l3-epB" id="Ddx-w8-yBE"></action>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

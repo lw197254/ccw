@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"></plugIn>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="DealerBigImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="137"></rect>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="136"></rect>
+                <autoresizingMask key="autoresizingMask"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SPv-3v-eP9">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="249"></rect>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SPv-3v-eP9" secondAttribute="height" multiplier="4:3" id="uGa-qj-Mud"></constraint>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Q1-fv-exN">
+                        <rect key="frame" x="0.0" y="96" width="332" height="40"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="tDr-JL-Aih"></constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-jt-K3D">
+                        <rect key="frame" x="15" y="108" width="302" height="17"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                        <color key="textColor" red="1.0000" green="1.0000" blue="1.0000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ddb-jt-K3D" firstAttribute="centerY" secondItem="3Q1-fv-exN" secondAttribute="centerY" id="1cd-Fy-zWX"></constraint>
+                    <constraint firstItem="3Q1-fv-exN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Oe-Mp-cJf"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="SPv-3v-eP9" secondAttribute="trailing" id="NXq-BV-xpy"></constraint>
+                    <constraint firstItem="ddb-jt-K3D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="P8y-D6-d6h"></constraint>
+                    <constraint firstAttribute="bottom" secondItem="3Q1-fv-exN" secondAttribute="bottom" id="WVv-q6-EaD"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="3Q1-fv-exN" secondAttribute="trailing" id="et6-ph-pbD"></constraint>
+                    <constraint firstItem="SPv-3v-eP9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="feH-Ek-xZs"></constraint>
+                    <constraint firstAttribute="trailing" secondItem="ddb-jt-K3D" secondAttribute="trailing" constant="15" id="sRS-cm-Wra"></constraint>
+                    <constraint firstItem="SPv-3v-eP9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tGn-3y-Vbe"></constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImage" destination="SPv-3v-eP9" id="ZhG-de-qIx"></outlet>
+                <outlet property="bottomImage" destination="3Q1-fv-exN" id="1rM-mc-x8c"></outlet>
+                <outlet property="title" destination="ddb-jt-K3D" id="7w9-An-vUA"></outlet>
+            </connections>
+            <point key="canvasLocation" x="70" y="182.5"></point>
+        </tableViewCell>
+    </objects>
+</document>

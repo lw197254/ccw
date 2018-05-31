@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideTagsView">
+            <connections>
+                <outlet property="fatherView" destination="nl4-ut-aCF" id="Ciw-vg-dMQ"/>
+                <outlet property="jumpButton" destination="zym-Qf-brY" id="AM6-Fd-pq5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qfZ-xM-rUA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择感兴趣的标签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K7-xZ-hNm">
+                    <rect key="frame" x="113.5" y="70" width="147" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="o4N-uf-VL4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择后，相关内容将优先推荐给你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQZ-nS-VdG">
+                    <rect key="frame" x="80.5" y="100" width="214.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zym-Qf-brY">
+                    <rect key="frame" x="329" y="70" width="31" height="30"/>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-ut-aCF">
+                    <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nl4-ut-aCF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Khi-eh-vOv"/>
+                <constraint firstItem="nl4-ut-aCF" firstAttribute="top" secondItem="DQZ-nS-VdG" secondAttribute="bottom" constant="15" id="O6g-B8-ecK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nl4-ut-aCF" secondAttribute="trailing" id="PsH-iW-NuZ"/>
+                <constraint firstItem="DQZ-nS-VdG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Rj4-VW-NUX"/>
+                <constraint firstItem="6K7-xZ-hNm" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="TOl-Um-clj"/>
+                <constraint firstItem="DQZ-nS-VdG" firstAttribute="top" secondItem="6K7-xZ-hNm" secondAttribute="bottom" constant="5" id="UdL-VO-1Mx"/>
+                <constraint firstItem="zym-Qf-brY" firstAttribute="top" secondItem="6K7-xZ-hNm" secondAttribute="top" id="UhG-Cl-CYe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zym-Qf-brY" secondAttribute="trailing" constant="15" id="bbF-hB-DAY"/>
+                <constraint firstItem="6K7-xZ-hNm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="nOw-Bj-fQw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nl4-ut-aCF" secondAttribute="bottom" id="r5Q-Sc-pcb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

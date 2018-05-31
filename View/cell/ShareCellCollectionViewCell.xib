@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"></plugIn>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"></capability>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"></placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"></placeholder>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShareCellCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="83"></rect>
+            <autoresizingMask key="autoresizingMask"></autoresizingMask>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="83"></rect>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"></autoresizingMask>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-Ym-HR5">
+                        <rect key="frame" x="34.5" y="0.0" width="60" height="60"></rect>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4PX-Cn-5qd"></constraint>
+                            <constraint firstAttribute="width" secondItem="DGZ-Ym-HR5" secondAttribute="height" multiplier="1:1" id="ZPl-bD-kTx"></constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNI-Jb-fem">
+                        <rect key="frame" x="49" y="68" width="31" height="14.5"></rect>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"></fontDescription>
+                        <color key="textColor" red="0.2000" green="0.2000" blue="0.2000" alpha="1" colorSpace="deviceRGB"></color>
+                        <nil key="highlightedColor"></nil>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DGZ-Ym-HR5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Gfa-RP-upo"></constraint>
+                <constraint firstItem="tNI-Jb-fem" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="I42-gI-gbv"></constraint>
+                <constraint firstItem="tNI-Jb-fem" firstAttribute="top" secondItem="DGZ-Ym-HR5" secondAttribute="bottom" constant="8" id="apE-WP-EZq"></constraint>
+                <constraint firstItem="DGZ-Ym-HR5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hgf-fB-BZf"></constraint>
+            </constraints>
+            <size key="customSize" width="131" height="83"></size>
+            <connections>
+                <outlet property="name" destination="tNI-Jb-fem" id="PAI-px-mCd"></outlet>
+                <outlet property="shareImage" destination="DGZ-Ym-HR5" id="Rxs-lQ-qsC"></outlet>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="145.5"></point>
+        </collectionViewCell>
+    </objects>
+</document>
